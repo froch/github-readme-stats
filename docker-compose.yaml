@@ -1,0 +1,16 @@
+---
+
+services:
+
+  app:
+    image: froch/app
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: app
+    platform: linux/amd64
+    ports:
+      - "3000:3000"
+    command: ["npm", "start"]
+    env_file:
+      - .env
