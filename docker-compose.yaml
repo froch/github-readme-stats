@@ -3,7 +3,7 @@
 services:
 
   app:
-    image: froch/app
+    image: europe-southwest1-docker.pkg.dev/nakanodo-main/nakanodo/github-readme-stats:latest
     build:
       context: .
       dockerfile: Dockerfile
