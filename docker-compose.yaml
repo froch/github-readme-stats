@@ -2,12 +2,11 @@
 
 services:
 
-  app:
-    image: europe-southwest1-docker.pkg.dev/nakanodo-main/nakanodo/github-readme-stats:latest
+  www:
+    image: northamerica-northeast1-docker.pkg.dev/manafont-www-dev/github-readme-stats/www:latest
     build:
       context: .
       dockerfile: Dockerfile
-      target: app
     platform: linux/amd64
     ports:
       - "3000:3000"
